@@ -10,18 +10,18 @@
     <div class="class col-md-6">
       <div class="class card">
         <h5>Preencha os campos do formulário:</h5>
-        <div class="class row">
-          <form>
+        <div class="row">
+          <form [formGroup]="addItensForm">
             <!--Nome do Item-->
             <div class="form-group mb-4">
               <label for="exampleFormControlInput1">Nome do Item</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome do Item">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome do Item" formControlName="nameItem">
             </div>
 
             <!--Unidade de Medida-->
             <div class="form-group mb-4">
               <label for="exampleFormControlSelect1">Unidade de Medida</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" id="exampleFormControlSelect1" formControlName="measure">
                 <option>Litros</option>
                 <option>Quilogramas</option>
                 <option>Unidade</option>
@@ -31,26 +31,26 @@
             <!--Quantidade-->
             <div class="form-group mb-4">
               <label for="exampleFormControlInput1">Quantidade</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" formControlName="quantity">
             </div>
 
             <!--Preço-->
             <div class="form-group mb-4">
               <label for="exampleFormControlInput1">Preço</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$ 00,00">
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$ 00,00" formControlName="price">
             </div>
 
             <!--Produto Perecível-->
             <div class="form-group mb-4">
               <label for="exampleFormControlInput1">Produto Perecível</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <div class="form-check" formControlName="product">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                 <label class="form-check-label" for="flexRadioDefault1">
                   Sim
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                 <label class="form-check-label" for="flexRadioDefault2">
                   Não
                 </label>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="clss text-center">
-              <button type="submit" class="btn btn-primary mx-3">Salvar</button>
+              <button type="submit" (click)="submitItems()" class="btn btn-primary mx-3">Salvar</button>
               <button type="submit" class="btn btn-danger" routerLink="/list">Cancelar</button>
             </div>
           </form>
