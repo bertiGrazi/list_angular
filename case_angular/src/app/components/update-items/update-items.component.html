@@ -1,1 +1,52 @@
-<p>update-items works!</p>
+<!-- image section -->
+<div class="class container-fluid">
+  <div class="class row">
+    <div class="clsss col-sm-5">
+      <div class="class image">
+        <img src="../../../assets/svg/list_image.svg" class="img-fluid">
+      </div>
+    </div>
+    <!-- form section -->
+    <div class="class col-md-6">
+      <div class="class card">
+        <h5>Preencha os campos do formulário:</h5>
+        <div class="row">
+          <form>
+            <!--Nome do Item-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlInput1">Nome do Item</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome do Item">
+            </div>
+
+            <!--Unidade de Medida-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlSelect1">Unidade de Medida</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Litros</option>
+                <option>Quilogramas</option>
+                <option>Unidade</option>
+              </select>
+            </div>
+
+            <!--Quantidade-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlInput1">Quantidade</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+
+            <!--Preço-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlInput1">Preço</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$ 00,00">
+            </div>
+
+            <div class="clss text-center">
+              <button type="submit" class="btn btn-primary mx-3">Salvar</button>
+              <button type="submit" class="btn btn-danger" routerLink="/list">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
