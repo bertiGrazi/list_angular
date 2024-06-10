@@ -20,4 +20,8 @@ export class ApiService {
   deleteItem(id: number) {
     return this.http.delete<items>(`http://localhost:3000/items/${id}` );
   }
+
+  updateItem(id: number) {
+    return this.http.get<items>(`http://localhost:3000/items/${id}` );
+  }
 }
