@@ -20,4 +20,11 @@ export class ListComponent implements OnInit {
       this.data = res;
     })
   }
+
+  delete(id: number) {
+    this.api.deleteItem(id).subscribe(res => {
+      alert("Item deletado com sucesso!!!!")
+      this.getItems();
+    })
+  }
 }

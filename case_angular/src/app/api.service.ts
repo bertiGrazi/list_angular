@@ -16,4 +16,8 @@ export class ApiService {
   getItems() {
     return this.http.get<items[]>("http://localhost:3000/items")
   }
+
+  deleteItem(id: number) {
+    return this.http.delete<items>("http://localhost:3000/items"+id)
+  }
 }

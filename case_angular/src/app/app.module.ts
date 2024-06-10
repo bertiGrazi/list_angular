@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { AddItemComponent } from './components/add-item/add-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateItemsComponent } from './components/update-items/update-items.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    AddItemComponent
+    AddItemComponent,
+    UpdateItemsComponent
   ],
   imports: [
     BrowserModule,
