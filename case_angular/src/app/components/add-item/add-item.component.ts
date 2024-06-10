@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-item',
@@ -10,7 +11,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class AddItemComponent implements OnInit {
   addItensForm: FormGroup | any;
 
-  constructor(private FormBuilder: FormBuilder) {}
+  constructor(private FormBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.addItensForm = this.FormBuilder.group({
@@ -26,5 +27,7 @@ export class AddItemComponent implements OnInit {
     console.log(this.addItensForm.value)
 
     this.addItensForm.reset()
+
+    this.router.navigate(["/list"])
   }
 }
