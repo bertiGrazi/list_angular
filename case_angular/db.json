@@ -1,46 +1,18 @@
 {
   "items": [
     {
-      "id": "1",
+      "id": 1,
       "nameItem": "Teste",
       "measure": "Quilograma",
       "quantity": 1,
       "price": 22
     },
     {
-      "id": "1d4d",
-      "nameItem": "Teste",
-      "measure": "Litros",
+      "id": "bdfd",
+      "nameItem": "Grazi",
+      "measure": "Quilogramas",
       "quantity": 2,
       "price": 22
-    },
-    {
-      "id": "1e0d",
-      "nameItem": "Grazi",
-      "measure": "Unidade",
-      "quantity": 3,
-      "price": 333
-    },
-    {
-      "id": "a313",
-      "nameItem": "Teste",
-      "measure": "Quilogramas",
-      "quantity": 4,
-      "price": 44
-    },
-    {
-      "id": "c974",
-      "nameItem": "SPFC",
-      "measure": "Quilogramas",
-      "quantity": 3,
-      "price": 33
-    },
-    {
-      "id": "c63d",
-      "nameItem": "teste",
-      "measure": "Quilogramas",
-      "quantity": 2,
-      "price": 44
     }
   ]
 }
