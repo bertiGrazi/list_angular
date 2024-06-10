@@ -22,8 +22,7 @@ export class ListComponent implements OnInit {
   }
 
   delete(id: number) {
-    const idAsString: string = id.toString();
-    this.api.deleteItem(idAsString).subscribe(res => {
+    this.api.deleteItem(id).subscribe(res => {
       alert("Item deletado com sucesso!!!!");
       this.getItems();
     });

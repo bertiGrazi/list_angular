@@ -17,8 +17,7 @@ export class ApiService {
     return this.http.get<items[]>("http://localhost:3000/items")
   }
 
-  deleteItem(id: string) {
-    const numericId: number = parseInt(id, 10); 
-    return this.http.delete<items>("http://localhost:3000/items/" + numericId);
+  deleteItem(id: number) {
+    return this.http.delete<items>(`http://localhost:3000/items/${id}` );
   }
 }

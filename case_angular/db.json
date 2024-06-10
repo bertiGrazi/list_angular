@@ -1,25 +1,5 @@
 {
   "items": [
-    {
-      "id": 1,
-      "nameItem": "Teste",
-      "measure": "Quilograma",
-      "quantity": 1,
-      "price": 22
-    },
-    {
-      "id": "bdfd",
-      "nameItem": "Grazi",
-      "measure": "Quilogramas",
-      "quantity": 2,
-      "price": 22
-    },
-    {
-      "id": "d100",
-      "nameItem": "aaa",
-      "measure": "Litros",
-      "quantity": 2,
-      "price": 2
-    }
+
   ]
 }
