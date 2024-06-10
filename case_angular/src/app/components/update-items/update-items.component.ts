@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params} from '@angular/router';
+import { ActivatedRoute, Params, Router} from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 import { items } from '../itemsmodel';
 
@@ -12,16 +12,22 @@ export class UpdateItemsComponent implements OnInit {
   public itemId!: number
   public itemData: items = {} as items
 
-  constructor(private api: ApiService, private activatedRoute: ActivatedRoute) {}
+  constructor(private api: ApiService, private activatedRoute: ActivatedRoute, private route: Router) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((param: Params) => {
       this.itemId = param['id']
     })
-    this.api.updateItem(this.itemId).subscribe((data: items) => {
+    this.api.fetchItems(this.itemId).subscribe((data: items) => {
       this.itemData = data
       console.log(data)
     })
   }
 
+  updateItems() {
+    this.api.updateItems(this.itemData, this.itemId).subscribe((res: items) => {
+      alert("Item ou itens editados com sucesso!!!")
+      this.route.navigate(['/list'])
+    })
+  }
 }
