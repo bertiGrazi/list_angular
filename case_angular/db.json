@@ -13,6 +13,13 @@
       "measure": "Quilogramas",
       "quantity": 2,
       "price": 22
+    },
+    {
+      "id": "d100",
+      "nameItem": "aaa",
+      "measure": "Litros",
+      "quantity": 2,
+      "price": 2
     }
   ]
 }
