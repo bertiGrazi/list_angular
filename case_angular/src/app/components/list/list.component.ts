@@ -22,11 +22,15 @@ export class ListComponent implements OnInit {
   }
 
   delete(id: number) {
-    this.api.deleteItem(id).subscribe(res => {
-      alert("Item deletado com sucesso!!!!");
-      this.getItems();
-    });
+    const confirmDelete = confirm("Tem certeza que deseja excluir este item?");
+    if (confirmDelete) {
+      this.api.deleteItem(id).subscribe(res => {
+        alert("Item deletado com sucesso!!!!");
+        this.getItems();
+      });
+    }
   }
+  
   
   
 }
