@@ -58,7 +58,7 @@
             </div>
 
             <div class="clss text-center">
-              <button type="submit" (click)="submitItems()" class="btn btn-primary mx-3">Salvar</button>
+              <button type="submit" (click)="submitItems()" [disabled]="this.addItensForm.invalid" class="btn btn-primary mx-3">Salvar</button>
               <button type="submit" class="btn btn-danger" routerLink="/list">Cancelar</button>
             </div>
           </form>

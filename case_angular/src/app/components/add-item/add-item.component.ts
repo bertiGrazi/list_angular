@@ -24,5 +24,7 @@ export class AddItemComponent implements OnInit {
 
   submitItems() {
     console.log(this.addItensForm.value)
+
+    this.addItensForm.reset()
   }
 }
