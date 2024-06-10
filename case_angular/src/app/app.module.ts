@@ -9,13 +9,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateItemsComponent } from './components/update-items/update-items.component'
 import { FormsModule } from '@angular/forms';
+import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     AddItemComponent,
-    UpdateItemsComponent
+    UpdateItemsComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
