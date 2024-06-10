@@ -35,7 +35,7 @@
             <td>{{item.measure}}</td>
             <td>{{item.quantity}}</td>
             <td>{{item.price}}</td>
-            <td><i style="color: blue" class="fas fa-edit"></i>&nbsp;<i (click)="delete(item.id!)" style="color: red" class="fas fa-trash">
+            <td><i style="color: blue" routerLink="/updateitem/{{item.id}}" class="fas fa-edit"></i>&nbsp;<i (click)="delete(item.id!)" style="color: red" class="fas fa-trash">
               </i>
             </td>
           </tr>

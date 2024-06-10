@@ -7,7 +7,7 @@ import { UpdateItemsComponent } from './components/update-items/update-items.com
 const routes: Routes = [
   {path: 'list', component: ListComponent},
   {path: 'additem', component: AddItemComponent},
-  {path: 'updateitem', component: UpdateItemsComponent}
+  {path: 'updateitem/:id', component: UpdateItemsComponent}
 ];
 
 @NgModule({
