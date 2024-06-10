@@ -1,1 +1,17 @@
-{}
+{
+  "items": [
+    {
+      "nameItem": "Teste",
+      "measure": "Quilograma",
+      "quantity": 1,
+      "price": 22
+    },
+    {
+      "id": "1d4d",
+      "nameItem": "Teste",
+      "measure": "Litros",
+      "quantity": 2,
+      "price": 22
+    }
+  ]
+}

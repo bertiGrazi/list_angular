@@ -3,5 +3,4 @@ export class items {
   measure?: string;
   quantity?: number;
   price?: number;
-  product?: string;
 }

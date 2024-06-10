@@ -40,25 +40,8 @@
               <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$ 00,00" formControlName="price">
             </div>
 
-            <!--Produto Perecível-->
-            <div class="form-group mb-4">
-              <label for="exampleFormControlInput1">Produto Perecível</label>
-              <div class="form-check">
-                <input class=" form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked formControlName="product" value="Sim">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Sim
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" formControlName="product" value="Não">
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Não
-                </label>
-              </div>
-            </div>
-
             <div class="clss text-center">
-              <button type="submit" (click)="submitItems()" [disabled]="this.addItensForm.invalid" class="btn btn-primary mx-3">Salvar</button>
+              <button type="submit" (click)="submitItems(this.addItensForm.value)" [disabled]="this.addItensForm.invalid" class="btn btn-primary mx-3">Salvar</button>
               <button type="submit" class="btn btn-danger" routerLink="/list">Cancelar</button>
             </div>
           </form>
