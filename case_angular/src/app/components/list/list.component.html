@@ -26,20 +26,16 @@
             <th scope="col">Medida</th>
             <th scope="col">Quantidade</th>
             <th scope="col">Preço</th>
-            <th scope="col">Produto Perecível</th>
-            <th scope="col">Validade</th>
-            <th scope="col">Fabricação</th>
+            <th scope="col">Ação</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+          <tr *ngFor="let item of data">
+            <td>{{item.nameItem}}</td>
+            <td>{{item.measure}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.price}}</td>
+            <td><i style="color: blue" class="fas fa-edit"></i>&nbsp;<i style="color: red" class="fas fa-trash"></i></td>
           </tr>
         </tbody>
       </table>

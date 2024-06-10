@@ -12,4 +12,8 @@ export class ApiService {
   addItem(data: items) {
     return this.http.post<items>("http://localhost:3000/items", data)
   }
+
+  getItems() {
+    return this.http.get<items[]>("http://localhost:3000/items")
+  }
 }
