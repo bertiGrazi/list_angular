@@ -1,0 +1,14 @@
+.img-fluid {
+  height: 100%;
+  border-radius: 10px;
+  width: 100%
+}
+
+section {
+  background-image: linear-gradient(-225deg, #F5FC1A 0%, #EC7001 100%)
+}
+
+.card {
+  border-radiu: 5px;
+  background-image: linear-gradient(180deg, #EC7001 0%, #F5FC1A 100%)
+}
