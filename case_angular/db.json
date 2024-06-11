@@ -1,17 +1,10 @@
 {
   "items": [
     {
-      "id": "44db",
-      "nameItem": "Mamãe",
-      "measure": "Quilogramas",
+      "id": "8e81",
+      "nameItem": "Mais um Teste",
+      "measure": "Litros",
       "quantity": 9,
-      "price": 33
-    },
-    {
-      "id": "edde",
-      "nameItem": "Teste 2 !!!!!",
-      "measure": "Quilogramas",
-      "quantity": 3,
       "price": 33
     }
   ],
@@ -21,6 +14,12 @@
       "name": "Grazi",
       "email": "grazi@grazi.com.br",
       "password": "grazi"
+    },
+    {
+      "id": "c6a4",
+      "name": "Teste",
+      "email": "teste@teste.com.br",
+      "password": "teste"
     }
   ],
   "login": []
