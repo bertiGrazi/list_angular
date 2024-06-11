@@ -6,3 +6,9 @@ export class items {
   price?: number;
   id: number | undefined;
 }
+
+export class signup {
+  name?: string;
+  email?: string;
+  password?: string;
+}
