@@ -9,10 +9,14 @@
   width: 435px;
   padding: 31px 40px;
   transform: translate(-50%, -50%);
-  border: 10px solid #02329D;
+  border: 10px solid #02329d;
 }
 
 h5 {
   width: 600px;
   font-size: 21px;
+}
+
+.custom-mr-4 {
+  margin-left: 8px;
 }
