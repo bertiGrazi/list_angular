@@ -31,6 +31,8 @@ export class ListComponent implements OnInit {
     }
   }
   
-  
+  logout() {
+    localStorage.removeItem("loginData")
+  }
   
 }

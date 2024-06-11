@@ -53,6 +53,7 @@ export class LoginSignupComponent implements OnInit{
         alert("Pronto para logar!!!!")
         this.loginForm.reset()
         this.router.navigate(["/list"])
+        localStorage.setItem('loginData', JSON.stringify(user))
       } else {
         alert("Ops!!!!!! Usuário não encontrado com essas informações! Verifique se estão corretas!")
         this.loginForm.reset()

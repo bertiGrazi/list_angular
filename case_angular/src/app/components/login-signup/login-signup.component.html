@@ -28,7 +28,7 @@
                     <input type="password" class="form-control form-control-lg" placeholder="Digite sua senha" formControlName="password">
                   </div>
                   <div class="pt-1 mb-3 text-center">
-                    <button class="btn btn-dark" type="button" (click)="loginUser()">Entrar</button>
+                    <button class="btn btn-dark" type="button" (click)="loginUser()" [disabled]="this.loginForm.invalid">Entrar</button>
                   </div>
                   <p class="mt-5 pb-lg-2">Não tem conta?
                     <a (click)="signUp()" style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu cadastro aqui.</a>

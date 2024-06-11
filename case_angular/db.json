@@ -6,6 +6,13 @@
       "measure": "Quilogramas",
       "quantity": 9,
       "price": 33
+    },
+    {
+      "id": "edde",
+      "nameItem": "Teste 2 !!!!!",
+      "measure": "Quilogramas",
+      "quantity": 3,
+      "price": 33
     }
   ],
   "signup": [
@@ -16,7 +23,5 @@
       "password": "grazi"
     }
   ],
-  "login": [
-   
-  ]
+  "login": []
 }
