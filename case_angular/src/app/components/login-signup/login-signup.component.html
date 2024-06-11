@@ -1,5 +1,5 @@
 <!--login-->
-<section class="vh-100">
+<section class="vh-100" *ngIf="!isShow">
   <div class="container h-100">
     <div class="row justify-content-center align-items-center h-100">
       <div class="col col-xl-9">
@@ -31,7 +31,7 @@
                     <button class="btn btn-dark" type="button">Entrar</button>
                   </div>
                   <p class="mt-5 pb-lg-2">Não tem conta?
-                    <a style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu cadastro aqui.</a>
+                    <a (click)="signUp()" style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu cadastro aqui.</a>
                   </p>
                 </form>
               </div>
@@ -44,7 +44,7 @@
 </section>
 
 <!--sign up-->
-<section class="vh-100">
+<section class="vh-100" *ngIf="isShow">
   <div class="container h-100">
     <div class="row justify-content-center align-items-center h-100">
       <div class="col col-xl-9">
@@ -81,7 +81,7 @@
                     <button class="btn" type="button" style="background-color: #02329D; color: white">Cadastrar</button>
                   </div>
                   <p class="mt-5 pb-lg-2">Já tem conta?
-                    <a style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu Login aqui.</a>
+                    <a (click)="login()" style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu Login aqui.</a>
                   </p>
                 </form>
               </div>

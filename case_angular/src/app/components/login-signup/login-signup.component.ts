@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class LoginSignupComponent {
   isShow = false
 
-  
+  signUp() {
+    this.isShow = true
+  }
+
+  login() {
+    this.isShow = false
+  }
 }
