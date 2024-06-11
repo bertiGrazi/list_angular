@@ -21,7 +21,7 @@ export class AddItemComponent implements OnInit {
       measure:['', Validators.required],
       quantity:[''],
       price:['', Validators.required],
-      //product: ['', Validators.required]
+      product: ['', Validators.required]
     })
   }
 

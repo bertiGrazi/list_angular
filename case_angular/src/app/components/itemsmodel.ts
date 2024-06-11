@@ -5,6 +5,7 @@ export class items {
   quantity?: number;
   price?: number;
   id: number | undefined;
+  product?: string;
 }
 
 export class signup {

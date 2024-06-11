@@ -42,13 +42,11 @@
 
             <div class="form-group mb-4">
               <label><b>Produto Perecível?</b></label>
-              <mat-radio-group aria-label="Select an option">
+              <mat-radio-group aria-label="Select an option" formControlName="product">
                 <mat-radio-button value="Sim">Sim</mat-radio-button>
                 <mat-radio-button value="Não">Não</mat-radio-button>
               </mat-radio-group>
-
             </div>
-
 
             <div class="clss text-center">
               <button type="submit" (click)="submitItems(this.addItensForm.value)" [disabled]="this.addItensForm.invalid" class="btn btn-primary mx-3">Salvar</button>

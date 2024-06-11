@@ -40,6 +40,15 @@
               <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$ 00,00" [(ngModel)]="itemData.price" name="price">
             </div>
 
+            <!--Produto Perecível-->
+            <div class="form-group mb-4">
+              <label><b>Produto Perecível?</b></label>
+              <mat-radio-group aria-label="Select an option" formControlName="product" [(ngModel)]="itemData.product">
+                <mat-radio-button value="Sim">Sim</mat-radio-button>
+                <mat-radio-button value="Não">Não</mat-radio-button>
+              </mat-radio-group>
+            </div>
+
             <div class="clss text-center">
               <button type="submit" (click)="updateItems()" class="btn btn-primary mx-3">Salvar</button>
               <button type="submit" class="btn btn-danger" routerLink="/list">Cancelar</button>
