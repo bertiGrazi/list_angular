@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { signup, login } from '../itemsmodel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-signup',
@@ -13,7 +14,7 @@ export class LoginSignupComponent implements OnInit{
   signUpForm!: FormGroup
   loginForm!: FormGroup
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.signUpForm = this.formBuilder.group({
@@ -51,6 +52,7 @@ export class LoginSignupComponent implements OnInit{
       if (user) {
         alert("Pronto para logar!!!!")
         this.loginForm.reset()
+        this.router.navigate(["/list"])
       } else {
         alert("Ops!!!!!! Usuário não encontrado com essas informações! Verifique se estão corretas!")
         this.loginForm.reset()
