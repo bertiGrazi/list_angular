@@ -7,14 +7,6 @@
       "quantity": 4,
       "price": 44,
       "product": "Sim"
-    },
-    {
-      "id": "f710",
-      "nameItem": "3",
-      "measure": "Unidade",
-      "quantity": 33,
-      "price": 3,
-      "product": "Não"
     }
   ],
   "signup": [

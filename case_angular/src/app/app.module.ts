@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 
 import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { MatRadioModule } from '@angular/material/radio';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
