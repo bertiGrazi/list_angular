@@ -1,0 +1,94 @@
+<!--login-->
+<section class="vh-100" *ngIf="!isShow">
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col col-xl-9">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-lg-6">
+              <img src="../../../assets/svg/list_image.svg" class="img-fluid">
+            </div>
+            <!--form section-->
+            <div class="col-md-6 col-lg-6 align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form [formGroup]="loginForm">
+                  <div class="d-flex alignh-items-center mb-3 pb-1">
+                    <i class=" fas fa-cubes fa-2x" style="color: #02329D;"></i>
+                    <span class="h1 fw-bold mb-0" style="margin-left: 10px;">Login</span>
+                  </div>
+                  <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Acesse a sua conta</h5>
+
+                  <div class="form-outline mb-2">
+                    <label class="form label">E-mail</label>
+                    <input type="email" class="form-control form-control-lg" placeholder="Digite seu e-mail" formControlName="email">
+                  </div>
+
+                  <div class="form-outline mb-2">
+                    <label class="form label">Senha</label>
+                    <input type="password" class="form-control form-control-lg" placeholder="Digite sua senha" formControlName="password">
+                  </div>
+                  <div class="pt-1 mb-3 text-center">
+                    <button class="btn btn-dark" type="button" (click)="loginUser()" [disabled]="this.loginForm.invalid">Entrar</button>
+                  </div>
+                  <p class="mt-5 pb-lg-2">Não tem conta?
+                    <a (click)="signUp()" style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu cadastro aqui.</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--sign up-->
+<section class="vh-100" *ngIf="isShow">
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col col-xl-9">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4 col-lg-6">
+              <img src="../../../assets/svg/list_image.svg" class="img-fluid">
+            </div>
+            <!--form section-->
+            <div class="col-md-6 col-lg-6 align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form [formGroup]="signUpForm">
+                  <div class="d-flex alignh-items-center mb-3 pb-1">
+                    <i class=" fas fa-cubes fa-2x" style="color: #02329D;"></i>
+                    <span class="h1 fw-bold mb-0" style="margin-left: 10px;">Cadastro</span>
+                  </div>
+                  <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Acesse a sua conta</h5>
+
+                  <div class="form-outline mb-2">
+                    <label class="form label">Nome</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Digite seu nome" formControlName="name">
+                  </div>
+
+                  <div class="form-outline mb-2">
+                    <label class="form label">E-mail</label>
+                    <input type="email" class="form-control form-control-lg" placeholder="Digite seu e-mail" formControlName="email">
+                  </div>
+
+                  <div class="form-outline mb-2">
+                    <label class="form label">Senha</label>
+                    <input type="password" class="form-control form-control-lg" placeholder="Digite sua senha" formControlName="password">
+                  </div>
+                  <div class="pt-1 mb-3 text-center">
+                    <button class="btn" type="button" style="background-color: #02329D; color: white" (click)="submitSignUp()" [disabled]="this.signUpForm.invalid">Cadastrar</button>
+                  </div>
+                  <p class="mt-5 pb-lg-2">Já tem conta?
+                    <a (click)="login()" style="color: #02329D;cursor: pointer;font-weight: 700; text-decoration: underline;">Faça seu Login aqui.</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

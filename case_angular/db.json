@@ -1,11 +1,27 @@
 {
   "items": [
     {
-      "id": "fae4",
-      "nameItem": "Grazielli",
+      "id": "44db",
+      "nameItem": "Mamãe",
       "measure": "Quilogramas",
-      "quantity": 4,
+      "quantity": 9,
+      "price": 33
+    },
+    {
+      "id": "edde",
+      "nameItem": "Teste 2 !!!!!",
+      "measure": "Quilogramas",
+      "quantity": 3,
       "price": 33
     }
-  ]
+  ],
+  "signup": [
+    {
+      "id": "0bc9",
+      "name": "Grazi",
+      "email": "grazi@grazi.com.br",
+      "password": "grazi"
+    }
+  ],
+  "login": []
 }
