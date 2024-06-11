@@ -11,6 +11,8 @@ import { UpdateItemsComponent } from './components/update-items/update-items.com
 import { FormsModule } from '@angular/forms';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 
+import { MatRadioModule } from '@angular/material/radio';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { LoginSignupComponent } from './components/login-signup/login-signup.com
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
