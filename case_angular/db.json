@@ -8,5 +8,12 @@
       "price": 33
     }
   ],
-  "signup": []
+  "signup": [
+    {
+      "id": "0bc9",
+      "name": "Grazi",
+      "email": "grazi@grazi.com.br",
+      "password": "grazi"
+    }
+  ]
 }
