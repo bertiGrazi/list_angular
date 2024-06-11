@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-signup.component.css']
 })
 export class LoginSignupComponent {
+  isShow = false
 
+  
 }
