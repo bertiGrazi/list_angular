@@ -1,27 +1,5 @@
 {
-  "items": [
-    {
-      "id": "8d81",
-      "nameItem": "Grazi",
-      "measure": "Quilogramas",
-      "quantity": 4,
-      "price": 44,
-      "product": "Sim"
-    }
-  ],
-  "signup": [
-    {
-      "id": "0bc9",
-      "name": "Grazi",
-      "email": "grazi@grazi.com.br",
-      "password": "grazi"
-    },
-    {
-      "id": "c6a4",
-      "name": "Teste",
-      "email": "teste@teste.com.br",
-      "password": "teste"
-    }
-  ],
+  "items": [],
+  "signup": [],
   "login": []
 }
