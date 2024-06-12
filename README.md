@@ -4,7 +4,8 @@
  <a href="#tech">Tecnologias</a> • 
  <a href="#started">Como começar</a> • 
  <a href="#implemented">O que foi implementado</a> • 
-  <a href="#add">O que foi adicionado a mais</a> • 
+ <a href="#add">O que foi adicionado a mais</a> • 
+ <a href="#not">O que foi adicionado a mais</a> • 
 </p>
 
 <p align="center">
@@ -25,7 +26,7 @@
 - [x] 2 páginas - Listagem e Formulário
 - [x] Dados devem ser persistidos no formato JSON
 - [x] Uso do LocalStorage
-- [x] Validação de alguns campos 
+- [x] Validação de alguns campos
 - [x] Botão de Salvar, Cancelar e Editar funcionais
 - [x] Rotas
 - [x] Utilização do Botstrap e Material
@@ -35,7 +36,7 @@
 - [x] Mais 2 páginas - Login e Cadastro
 - [x] Utilização de json server para consumo de uma api fake
 
-<h2 id="started">🚀 O que não foi implementado</h2>
+<h2 id="not">🚀 O que não foi implementado</h2>
 
 - [ ] Campo de validade e data de fabricação
 - [ ] Validação monetária
