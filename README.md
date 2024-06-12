@@ -1,15 +1,17 @@
 <h1 align="center" style="font-weight: bold;">Case Angular 💻</h1>
 
 <p align="center">
- <a href="#tech">Technologies</a> • 
- <a href="#started">Getting Started</a> • 
+ <a href="#tech">Tecnologias</a> • 
+ <a href="#started">Como começar</a> • 
+ <a href="#implemented">O que foi implementado</a> • 
+  <a href="#add">O que foi adicionado a mais</a> • 
 </p>
 
 <p align="center">
-    <b>In this project, a Single Page Application (SPA) for item registration was implemented, consisting of a registration page and a listing page.</b>
+    <b>Neste projeto, foi implementada uma Single Page Application (SPA) para registro de itens, composta por uma página de registro e uma página de listagem..</b>
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="technologies">💻 Tecnologias</h2>
 
 - Angular 15
 - Bootstrap
@@ -18,27 +20,38 @@
 - Json Server
 - LocalStorage
 
-<h2 id="started">🚀 Getting started</h2>
+<h2 id="implemented">🚀 O que foi implementado?</h2>
 
-Here you describe how to run your project locally
+- [x] 2 páginas - Listagem e Formulário
+- [x] Dados devem ser persistidos no formato JSON
+- [x] Uso do LocalStorage
+- [x] Validação de alguns campos 
+- [x] Botão de Salvar, Cancelar e Editar funcionais
+- [x] Rotas
+- [x] Utilização do Botstrap e Material
 
-<h3>Prerequisites</h3>
+<h2 id="add">🚀 O que foi adicionado a mais?</h2>
+- [x] Mais 2 páginas - Login e Cadastro
+- [x] Utilização de json server para consumo de uma api fake
 
-Here you list all prerequisites necessary for running your project. For example:
+<h2 id="started">🚀 O que não foi implementado</h2>
+- [ ] Campo de validade e data de fabricação
+- [ ] Validação monetária
+- [ ] Responsividade
+
+<h3>Pré-requisitos</h3>
 
 - [NodeJS](https://nodejs.org/en)
 - [Angular](https://angular.dev)
 - [Json Server](https://www.npmjs.com/package/json-server)
 
-<h3>Cloning</h3>
+<h3>Clonando o projeto</h3>
 
 ```bash
 git clone https://github.com/bertiGrazi/list_angular.git
 ```
 
-<h3>Starting</h3>
-
-How to start your project
+<h3>Começando o projeto</h3>
 
 ```bash
 cd case_angular
@@ -46,9 +59,3 @@ json-server --watch db.json
 
 ng server -o
 ```
-
-<h3>Documentations that might help</h3>
-
-[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
-
-[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
