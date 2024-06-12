@@ -15,6 +15,8 @@
 <h2 id="technologies">💻 Tecnologias</h2>
 
 - Angular 15
+- HTML 5
+- TypeScript
 - Bootstrap
 - CSS
 - Material UI
