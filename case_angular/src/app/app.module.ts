@@ -11,6 +11,12 @@ import { UpdateItemsComponent } from './components/update-items/update-items.com
 import { FormsModule } from '@angular/forms';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +30,12 @@ import { LoginSignupComponent } from './components/login-signup/login-signup.com
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
