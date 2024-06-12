@@ -31,10 +31,12 @@
 - [x] Utilização do Botstrap e Material
 
 <h2 id="add">🚀 O que foi adicionado a mais?</h2>
+
 - [x] Mais 2 páginas - Login e Cadastro
 - [x] Utilização de json server para consumo de uma api fake
 
 <h2 id="started">🚀 O que não foi implementado</h2>
+
 - [ ] Campo de validade e data de fabricação
 - [ ] Validação monetária
 - [ ] Responsividade
